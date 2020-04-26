@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Purchase Game</title>
+	<link rel="icon" type="image/png" href="icon.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="icon.png" sizes="16x16" />
+    <link rel="stylesheet" type="text/css" href="pur.css">
+</head>
+<body>
+	        <header class="header">
+		<nav>
+			<ul>
+				<li style="list-style: none; display: inline"></li>
+				<li>
+					<a href="index.html">Back to Main Page</a>
+				</li>
+	        </ul>
+		</nav>
+    </header>
+
+
+   <form name='purchase' onsubmit="return formValidation()" class="main">
+    	
+    	<ul>
+    		<li>
+    			<div class="title"><h1>Enter Your Information To Proceed</h1></div>
+           </li>
+    		<li><label>Name</label></li>
+    		<li><input type="text" name="name" required placeholder="John Wick"></li>
+
+    		<li><label>Shipping Address</label></li>
+    		<li><input type="text" name="adds" required placeholder="16,jln abc,tmn ccc etc."></li>
+
+    		<li><label>Email Adress</label></li>
+    		<li><input type="emailadress" name="emailadress" required placeholder="idunknow@gmail.com"></li>
+
+	        <li><label>Game Edition</label></li>
+    		<li><select name="gameed" required="">
+	        	<option value="" disabled selected>Choose Edition</option>
+				<option label="Standard Edition">Standard Edition</option>
+				<option label="Deluxe Edition">Deluxe Edition</option>
+				<option label="Collector's Edition">Collector's Edition</option>
+				</select>		
+	        </li>
+
+	        <li><label>Voucher</label></li>
+    		<li><input type="text" name="vou" required placeholder="xxxx-xxxx-xxxx"></li>
+    		<li><label>Pay via.</label></li>
+    		<li><select>
+    			<option value="" disabled selected>Choose Method</option>
+    			<option>Debit Card</option>
+    			<option>Credit Card</option>
+    			<option>PayPal</option>
+    			<option>Online Banking</option>
+    		</select></li>
+
+    		<li><button type="submit" onclick="clickdat()">Submit</button></li>
+    	</ul>
+    	    </form>
+
+</body>
+    <script type="text/javascript">
+        function clickdat(){
+            alert("Sorry! Function not yet available")
+        }
+</script>
+</html>
